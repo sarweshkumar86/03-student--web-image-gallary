@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0%;
+        padding:0%;
+        box-sizing: border-box;
+    }
+
+    .wrapper{
+        width:100%;
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://i.pinimg.com/564x/8d/5e/5e/8d5e5eccf86a5638d0df8ec49b9c1c85.jpg);
+        /* background-size: cover; */
+        /* background-position: right; */
+    }
+
+    .container{
+        width:80%;
+        height:80%;
+        /* background-color: lightcoral; */
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+        grid-template-areas: 
+                            "Main Content-1 Content-2"
+                            "Main Content-3 Content-4";
+
+        gap: 10px;
+
+        }
+
+    .box{
+        border-radius: 30px;
+    }
+
+    .box-1{
+        /* background-color: aquamarine; */
+        grid-area: Main;
+        background-image: url(https://i.pinimg.com/564x/80/79/3a/80793a1ca349529d7e568c60861484a4.jpg);
+        background-size: cover;
+        background-position: center;
+    
+    }
+
+    .box-2{
+        /* background-color: rgb(39, 73, 136); */
+        grid-area: Content-1;
+        background-image: url(https://i.pinimg.com/736x/e3/96/77/e396774c35a808de3005d14da904aad5.jpg);
+        background-size: cover;
+        background-position: center;
+    
+    }
+
+    .box-3{
+        /* background-color: rgb(78, 168, 55); */
+        grid-area: Content-2 ;
+        background-size: cover;
+        background-position: center;
+        background-image: url(https://i.pinimg.com/564x/dc/b3/53/dcb35382de569aec5054076f06e5717d.jpg);
+    }
+
+    .box-4{
+        /* background-color: rgb(163, 165, 54); */
+        grid-area: Content-3;
+        background-size: cover;
+        background-position: center;
+        background-image: url(https://i.pinimg.com/736x/c9/6b/1c/c96b1c5adfbf70ee6e702289475e9772.jpg);
+    }
+
+    .box-5{
+        /* background-color: rgb(255, 127, 227); */
+        grid-area: Content-4;
+        background-size: cover;
+        background-position: center;
+        background-image: url(https://i.pinimg.com/564x/36/b3/a8/36b3a8227a9c260f352b9411220b5959.jpg);
+    }
+/* for mobile screen */
+@media screen and (max-width:576px) {
+    .wrapper{
+        height: 200vh;
+    }
+    
+    
+    
+    
+    .container{
+        width:100%;
+        height:100%;
+        /* background-color: lightcoral; */
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-areas: 
+                            "Main Main"
+                            "Content-1 Content-2"
+                            "Content-3 Content-4";
+        
+    }
+    
+}
+
+
+
+
+
+
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="box box-1"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3"></div>
+            <div class="box box-4"></div>
+            <div class="box box-5"></div>
+        </div>
+    </div>
+</body>
+</html>
